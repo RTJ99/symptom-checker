@@ -10,22 +10,28 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.18.1",
+    "@react-native-community/datetimepicker": "^7.0.1",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "^6.0.16",
     "@react-navigation/native-stack": "^6.9.4",
     "@types/react-native-snap-carousel": "^3.8.5",
     "axios": "^1.4.0",
     "deprecated-react-native-prop-types": "^4.0.0",
+    "jwt-decode": "^3.1.2",
     "native-base": "^3.4.25",
     "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-elements": "^3.4.3",
+    "react-native-google-places-autocomplete": "^2.5.1",
+    "react-native-maps": "^1.4.0",
     "react-native-reanimated-carousel": "^3.1.5",
     "react-native-safe-area-context": "^3.4.1",
     "react-native-screens": "^3.18.2",
     "react-native-snap-carousel": "^3.9.1",
     "react-native-svg": "^12.1.1",
-    "react-native-vector-icons": "^9.2.0"
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-wizard": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

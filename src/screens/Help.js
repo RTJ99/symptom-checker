@@ -20,18 +20,17 @@ const HelpScreen = ({navigation}) => {
             width: 200,
             height: 200,
           }}
-          source={require('../../assets/logogg.png')}
+          source={require('../../assets/log.png')}
         />
         <Text style={styles.title}>Need help?</Text>
         <Text style={styles.subtitle}>
           Call our toll-free numbers for enquiries
         </Text>
-        <Text>Youth helpline 393</Text>
+        <Text>Helpline 577</Text>
         <Text>All emergencies 999</Text>
         <Text>Police 995</Text>
         <Text>child helpline 116</Text>
-        <Text>GBV 575 saywhat</Text>
-        <Text>Helpline 577</Text>
+
         <TouchableOpacity style={styles.callButton} onPress={handleCallPress}>
           <Text style={styles.callButtonText}>{phoneNumber}</Text>
         </TouchableOpacity>

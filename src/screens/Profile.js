@@ -5,28 +5,13 @@ import colors from '../constants/colors';
 const ProfilePage = () => {
   return (
     <View style={styles.container}>
-      <Image
-        source={require('../../assets/bggg.jpeg')}
-        style={styles.coverImage}
-      />
       <View style={styles.profileContainer}>
         <Image
-          source={require('../../assets/logogg.png')}
+          source={require('../../assets/log.png')}
           style={styles.profilePic}
         />
-        <Text style={styles.name}>Medical Symptom Checker</Text>
-        <Text style={styles.location}>V1.0</Text>
-      </View>
-      <View style={styles.info}>
-        <Text style={styles.label}>About App</Text>
-        <Text style={styles.description}>
-          This app is a medical symptom checker that helps you to check your
-          symptoms and get the best possible medical advice.
-        </Text>
-        <Text style={styles.label}>Update</Text>
-        <Text style={styles.movies}>
-          Download the latest update on playstore to keep your app up to date.
-        </Text>
+        <Text style={styles.name}>Batsirai</Text>
+        <Text style={styles.location}>+26371877665</Text>
       </View>
     </View>
   );

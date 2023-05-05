@@ -9,6 +9,11 @@ import Tabs from './src/BottomBar';
 import SymptomChecker from './src/screens/Symptoms';
 import SignIn from './src/screens/SignIn';
 import Symptoms from './src/screens/Symptoms';
+import SignUp from './src/screens/SignUp';
+import OTP from './src/screens/OTP';
+import OfferRide from './src/screens/OfferRide';
+import FindRide from './src/screens/FindRide';
+import RideDetails from './src/screens/RideDetails';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -65,6 +70,71 @@ function App() {
               },
             }}
             component={SignIn}
+          />
+          <Stack.Screen
+            name="SignUp"
+            options={{
+              headerShown: true,
+              headerTitle: 'Sign Up',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={SignUp}
+          />
+          <Stack.Screen
+            name="OTP"
+            options={{
+              headerShown: true,
+              headerTitle: 'OTP',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={OTP}
+          />
+          <Stack.Screen
+            name="OfferRide"
+            options={{
+              headerShown: true,
+              headerTitle: 'Offer Ride',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={OfferRide}
+          />
+          <Stack.Screen
+            name="FindRide"
+            options={{
+              headerShown: true,
+              headerTitle: 'Find Ride',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={FindRide}
+          />
+          <Stack.Screen
+            name="RideDetails"
+            options={{
+              headerShown: true,
+              headerTitle: 'Ride Details',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={RideDetails}
           />
         </Stack.Navigator>
       </NativeBaseProvider>

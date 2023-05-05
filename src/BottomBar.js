@@ -20,9 +20,9 @@ const screenOptions = (route, color) => {
   let screenName;
 
   switch (route.name) {
-    case 'About':
-      iconLink = 'information-circle-sharp';
-      screenName = 'About';
+    case 'Profile':
+      iconLink = 'person-circle';
+      screenName = 'Profile';
       break;
     case 'Help':
       iconLink = 'help-circle';
@@ -33,9 +33,9 @@ const screenOptions = (route, color) => {
       screenName = 'Tips';
       break;
 
-    case 'SymptomChecker':
-      iconLink = 'ios-search';
-      screenName = 'SymptomChecker';
+    case 'Home':
+      iconLink = 'ios-home';
+      screenName = 'Home';
       break;
     default:
       break;
@@ -47,8 +47,6 @@ const screenOptions = (route, color) => {
 const Tab = createBottomTabNavigator();
 
 const Tabs = ({route}) => {
-  const {name, age} = route.params;
-
   const navigation = useNavigation();
   return (
     <Tab.Navigator
@@ -73,7 +71,7 @@ const Tabs = ({route}) => {
       <Tab.Screen
         options={{
           headerShown: true,
-          headerTitle: `Hello ${name}`,
+          headerTitle: `Welcome to Gift Ride`,
           headerTitleAlign: 'center',
           headerTitleStyle: {
             color: '#fff',
@@ -84,28 +82,9 @@ const Tabs = ({route}) => {
           headerStyle: {
             backgroundColor: colors.primary,
           },
-          params: {
-            name: 'name',
-            age: age,
-          },
         }}
-        name="SymptomChecker"
+        name="Home"
         component={SymptomChecker}
-      />
-      <Tab.Screen
-        options={{
-          headerShown: false,
-
-          headerTitleAlign: 'center',
-          headerTitleStyle: {
-            color: '#000',
-            fontSize: 20,
-            fontWeight: 'bold',
-            textAlign: 'center',
-          },
-        }}
-        name="Tips"
-        component={TipsScreen}
       />
 
       <Tab.Screen
@@ -117,13 +96,8 @@ const Tabs = ({route}) => {
       <Tab.Screen
         options={{
           headerShown: false,
-
-          params: {
-            name: 'name',
-            age: age,
-          },
         }}
-        name="About"
+        name="Profile"
         component={Profile}
       />
     </Tab.Navigator>

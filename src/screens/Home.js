@@ -59,7 +59,7 @@ const Home = ({navigation}) => {
               marginBottom: 20,
             }}>
             <Image
-              source={require('../../assets/logogg.png')}
+              source={require('../../assets/log.png')}
               alt="logo"
               style={{
                 width: 250,
@@ -81,7 +81,7 @@ const Home = ({navigation}) => {
               color: '#00b894',
               textAlign: 'center',
             }}>
-            Your Personal Health Assistant
+            Gift Ride
           </Text>
 
           <Text
@@ -93,8 +93,7 @@ const Home = ({navigation}) => {
               color: '#00b894',
               textAlign: 'center',
             }}>
-            We are here to help you with your health needs and concerns in the
-            most convenient way possible.
+            Your go to app for ride sharing.
           </Text>
 
           {/* make a button */}
