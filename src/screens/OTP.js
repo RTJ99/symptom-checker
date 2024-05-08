@@ -13,7 +13,7 @@ const OTP = ({navigation, route}) => {
     setLoading(true);
     try {
       const response = await axios.post(
-        'http://127.0.0.1:8080/user/verify-otp',
+        'https://giftride.onrender.com/user/verify-otp',
         {
           phone: phone,
           otp: OTP, // replace with the OTP entered by the user
@@ -91,7 +91,7 @@ const OTP = ({navigation, route}) => {
             fontSize: 20,
             fontWeight: 'bold',
           }}>
-          Verify OTP
+          {loading ? 'Loading...' : 'Verify OTP'}
         </Text>
       </Button>
     </View>

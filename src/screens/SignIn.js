@@ -114,7 +114,7 @@ const SignIn = ({navigation}) => {
               color={colors.primary}
             />
           }
-          type="text"
+          type="password"
           borderColor={colors.primary}
           color="black"
         />

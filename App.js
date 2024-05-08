@@ -14,6 +14,7 @@ import OTP from './src/screens/OTP';
 import OfferRide from './src/screens/OfferRide';
 import FindRide from './src/screens/FindRide';
 import RideDetails from './src/screens/RideDetails';
+import TripDetails from './src/screens/TripDetails';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -135,6 +136,19 @@ function App() {
               },
             }}
             component={RideDetails}
+          />
+          <Stack.Screen
+            name="Trip Details"
+            options={{
+              headerShown: true,
+              headerTitle: 'Trip Details',
+              headerTitleStyle: {
+                color: '#000',
+                fontSize: 20,
+                fontWeight: 'bold',
+              },
+            }}
+            component={TripDetails}
           />
         </Stack.Navigator>
       </NativeBaseProvider>
